@@ -1,0 +1,128 @@
+*{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin-top: 40px;
+    
+}
+
+.contenedor-Principal{
+    display: flex;
+    padding: 10px;
+    background-color: blue;
+    justify-content: space-between;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    width: 50%;
+    margin: 168px 0px 0px 10px;
+    
+}
+
+.contenedor-Principal textarea {
+    width: 100%;  
+    padding: 50px;
+    border: none;
+    resize: none;
+    color: blue; /* Color del texto en el textarea */
+    box-sizing: border-box;
+    
+}
+
+.btn {
+    border-radius: 50px; /* Hace que los botones tengan una forma ovalada */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    margin: 0 10px; /* Espacio horizontal entre los botones */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    white-space: nowrap;
+    height: 50px; 
+    width: 250px; 
+    font-weight: bold;
+    
+}
+
+.iconogrande{
+    font-size: 2.5rem;
+    color: #0a66c2;
+}
+
+.encriptar{
+    background-color: #050050; /* Color de fondo al pasar el mouse sobre el botón Encriptar */
+    color: white;
+}
+
+.desencriptar{
+    background-color: #bfbcec; /* Color de fondo al pasar el mouse sobre el botón Desencriptar */
+}
+
+.limpiar{
+    background-color: gray;
+}
+
+::placeholder{
+    color: darkblue;
+    font-size: 30px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+
+.salida{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: flex-end; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    background-color: white;
+
+}
+
+.textarea2{
+    background: transparent;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+footer{
+    
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    height: 5px;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-Principal {
+        flex-direction: column; /* Las cajas se colocarán una debajo de la otra */
+    }
+
+    .entrada, .salida {
+        width: 100%; /* Las cajas tomarán todo el ancho del contenedor */
+    }
+}
